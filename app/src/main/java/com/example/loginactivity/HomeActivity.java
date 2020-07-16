@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
     Button btnLogout;
+    Button viewData;
     FirebaseAuth mFirebaseAuth;
     private  FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -26,6 +27,14 @@ public class HomeActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 Intent inToMain = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(inToMain);
+            }
+        });
+        viewData = findViewById(R.id.view_items_screen);
+        viewData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent database = new Intent(HomeActivity.this, ViewDatabase.class);
+                startActivity(database);
             }
         });
     }

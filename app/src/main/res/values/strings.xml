@@ -12,4 +12,12 @@
     <string name="register">Register</string>
     <string name="re_type_password">Re-type Password</string>
     <string name="your_name">Full Name</string>
+    <string name="registration_success">Successfully added to database</string>
+    <string name="input_error_name">Name is missing</string>
+    <string name="input_error_email">Enter your email</string>
+    <string name="input_error_email_invalid">Enter valid email</string>
+    <string name="input_error_password">Enter password</string>
+    <string name="input_error_password_length">Password should be of atleast 6 letters</string>
+    <string name="input_error_phone">Enter phone no</string>
+    <string name="input_error_phone_invalid">Invalid phone number</string>
 </resources>

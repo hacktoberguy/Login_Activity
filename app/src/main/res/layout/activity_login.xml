@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Login">
 
     <Button
         android:id="@+id/btn_register"
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="105dp"
         android:layout_marginRight="20dp"
         android:background="#DD5B8A"
         android:fontFamily="@font/roboto_regular"
@@ -66,30 +66,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
-        android:background="@drawable/btn_custom"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_custom"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/white"
-        android:text="@string/login"/>
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_arrow_right"
-        android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/swipeRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/swipe_left_for_register"
-        android:textSize="15sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"/>
+        android:text="login and database"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
